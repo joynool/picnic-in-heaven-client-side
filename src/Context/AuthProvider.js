@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { createContext } from 'react';
+import useFirebase from './../hooks/useFirebase';
 
-const AuthProvider = () =>
+/*-------------------------------------------------------
+    Implement Context API to pass firebase authentication
+---------------------------------------------------------*/
+
+export const AuthContext = createContext();
+
+const AuthProvider = ({ children }) =>
 {
     return (
-        <div>
-
-        </div>
+        <AuthContext.Provider value={useFirebase()}>
+            {children}
+        </AuthContext.Provider>
     );
 };
 

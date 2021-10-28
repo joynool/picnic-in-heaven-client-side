@@ -50,7 +50,7 @@ const useFirebase = () =>
             .finally(() => setIsLoading(false));
     };
 
-    return { user, isLoading, message, setMessage, setIsLoading, loginUsingGoogle, logOut };
+    return { loginUsingGoogle, logOut, user, isLoading, setIsLoading, message, setMessage };
 };
 
 export default useFirebase;
