@@ -20,8 +20,8 @@ const Service = () =>
                         <Card className="shadow">
                             <Card.Img variant="top" src={service.img} />
                             <Card.Body>
-                                <Card.Title>{service.name}</Card.Title>
-                                <Card.Text>
+                                <Card.Title className="fw-light fs-3">{service.name}</Card.Title>
+                                <Card.Text className="text-muted">
                                     {service.description}
                                 </Card.Text>
                             </Card.Body>
