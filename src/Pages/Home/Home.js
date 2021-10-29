@@ -1,13 +1,15 @@
 import React from 'react';
-import useAuth from '../../hooks/useAuth';
+import Banner from './Banner';
+import Service from './Service';
+import ThingsToDo from './ThingsToDo';
 
 const Home = () =>
 {
-    const { loginUsingGoogle } = useAuth();
-    console.log(loginUsingGoogle);
     return (
         <div>
-            <h2>This is Home</h2>
+            <Banner />
+            <Service />
+            <ThingsToDo />
         </div>
     );
 };
