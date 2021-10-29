@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from './../../images/logo.png';
 import { BsTelephone, BsEnvelope, BsCart3 } from 'react-icons/bs';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
@@ -22,16 +24,16 @@ const Header = () =>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#pricing">
+                            <Nav.Link as={HashLink} to="/home#home">
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="#pricing">
+                            <Nav.Link as={HashLink} to="/home#service">
                                 Service
                             </Nav.Link>
-                            <Nav.Link href="#pricing">
+                            <Nav.Link as={HashLink} to="/home#things-to-do">
                                 Things To Do
                             </Nav.Link>
-                            <Nav.Link href="#features">
+                            <Nav.Link as={Link} to="/login">
                                 <Button variant="btn btn-outline-dark">Login</Button>
                             </Nav.Link>
                             <NavDropdown title="Mithoon Ahmed" id="collasible-nav-dropdown">
@@ -43,7 +45,6 @@ const Header = () =>
                                 <div className="text-center">
                                     <Button variant="btn btn-outline-dark" className="ms-auto">Logout</Button>
                                 </div>
-
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

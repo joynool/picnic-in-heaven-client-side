@@ -8,7 +8,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const ThingsToDo = () =>
 {
     return (
-        <>
+        <div id="things-to-do">
             <div className="text-center m-5">
                 <h3 className="fw-light fs-1 text-success"><u>Things to do</u></h3>
                 <small className="fs-2 fw-light">
@@ -51,7 +51,7 @@ const ThingsToDo = () =>
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 

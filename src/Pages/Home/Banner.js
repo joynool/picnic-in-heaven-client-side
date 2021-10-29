@@ -27,7 +27,7 @@ const Banner = () =>
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>FAMILY BONDING</h3>
+                        <h3>STRONG YOUR FAMILY BONDING</h3>
                         <p>Going on a picnic allows you to focus on your kids without distractions. Picnics are the perfect opportunity to make your kids feel loved and heard. Plus, you never know what you might learn from your kids.</p>
                     </Carousel.Caption>
                 </Carousel.Item>

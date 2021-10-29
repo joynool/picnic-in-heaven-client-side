@@ -7,7 +7,7 @@ import ThingsToDo from './ThingsToDo';
 const Home = () =>
 {
     return (
-        <div>
+        <div id="home">
             <Banner />
             <Service />
             <ThingsToDo />

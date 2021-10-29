@@ -18,9 +18,9 @@ const Footer = () =>
                     Picnic In Heaven
                 </h5>
                 <Nav className="justify-content-center">
-                    <Nav.Link as={HashLink} to="/home" className="text-white me-1 p-0">Home |</Nav.Link>
-                    <Nav.Link as={HashLink} to="/services" className="text-white me-1 p-0">Services |</Nav.Link>
-                    <Nav.Link as={HashLink} to="/about" className="text-white m-0 p-0">Things To Do</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#home" className="text-white me-1 p-0">Home |</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#service" className="text-white me-1 p-0">Service |</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#things-to-do" className="text-white m-0 p-0">Things To Do</Nav.Link>
                 </Nav>
             </div>
             <div className="my-4 my-lg-0">
