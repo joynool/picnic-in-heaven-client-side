@@ -4,9 +4,12 @@ import logo from './../../images/logo.png';
 import { BsTelephone, BsEnvelope, BsCart3 } from 'react-icons/bs';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () =>
 {
+    const { user, logOut } = useAuth();
+
     return (
         <div className="sticky-top">
             <Navbar bg="dark" variant="dark">
@@ -33,19 +36,20 @@ const Header = () =>
                             <Nav.Link as={HashLink} to="/home#things-to-do">
                                 Things To Do
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/login">
-                                <Button variant="btn btn-outline-dark">Login</Button>
-                            </Nav.Link>
-                            <NavDropdown title="Mithoon Ahmed" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.2">My Order</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Manage All Order</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Add a New Service</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <div className="text-center">
-                                    <Button variant="btn btn-outline-dark" className="ms-auto">Logout</Button>
-                                </div>
-                            </NavDropdown>
+                            {
+                                user.email ? <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
+                                    <NavDropdown.Item href="#action/3.2">My Order</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Manage All Order</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4">Add a New Service</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <div className="text-center">
+                                        <Button onClick={logOut} variant="btn btn-outline-dark" className="ms-auto">Logout</Button>
+                                    </div>
+                                </NavDropdown> : <Nav.Link as={Link} to="/login">
+                                    <Button variant="btn btn-outline-dark">Login</Button>
+                                </Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
