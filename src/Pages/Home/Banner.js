@@ -16,8 +16,8 @@ const Banner = () =>
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>THE RUNNER'S LIFE</h3>
-                        <p>Gym and meditation can greatly increase your stamina.</p>
+                        <h3>RECAP YOUR CORE MEMORY</h3>
+                        <p>A picnic presents a perfect opportunity. Staying involved with your family and friends can help develop stronger bonds and foster warmth, protection and love, as well as emotions of belonging. Study proves that spending time in a natural environment is good for mental health.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () =>
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>SHAPE YOUR PERFECT BODY</h3>
-                        <p>Muscle building isn’t just for those who are into fitness as a hobby.</p>
+                        <h3>FAMILY BONDING</h3>
+                        <p>Going on a picnic allows you to focus on your kids without distractions. Picnics are the perfect opportunity to make your kids feel loved and heard. Plus, you never know what you might learn from your kids.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -38,8 +38,8 @@ const Banner = () =>
                         alt="Third slide"
                     />
                     <Carousel.Caption className=" position-absolute">
-                        <h3>FITNESS WORKOUT PROGRAM</h3>
-                        <p>It includes your body’s water, bone, organs, and muscle content.</p>
+                        <h3>IMPROVED MENTAL HEALTH</h3>
+                        <p>The fresh air does wonders for your child’s mental health. Spending time outside is shown to reduce levels of anxiety and lower levels of activity in the parts of our brains related to mental illness. Time in the sunshine is also related to improved mood and reduced stress levels for the whole family.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

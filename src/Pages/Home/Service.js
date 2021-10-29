@@ -4,7 +4,7 @@ const Service = () =>
 {
     return (
         <div>
-            <h2>this is service</h2>
+            <h3 className="fw-light fs-1 text-success text-center m-5"><u>Our Services</u></h3>
         </div>
     );
 };
