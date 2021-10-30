@@ -4,7 +4,7 @@ const MyOrder = () =>
 {
     return (
         <div>
-
+            <h2>My order</h2>
         </div>
     );
 };

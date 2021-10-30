@@ -4,6 +4,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import AddNewService from './Pages/AddNewService/AddNewService';
 import Login from './Pages/Auth/Login/Login';
+import PrivateRoute from './Pages/Auth/PrivateRoute/PrivateRoute';
 import Home from './Pages/Home/Home';
 import Service from './Pages/Home/Service';
 import ThingsToDo from './Pages/Home/ThingsToDo';
@@ -37,18 +38,18 @@ function App ()
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/add-new-service">
+            <PrivateRoute path="/add-new-service">
               <AddNewService />
-            </Route>
-            <Route path="/my-order">
+            </PrivateRoute>
+            <PrivateRoute path="/my-order">
               <MyOrder />
-            </Route>
-            <Route path="/manage-all-order">
+            </PrivateRoute>
+            <PrivateRoute path="/manage-all-order">
               <ManageAllOrder />
-            </Route>
-            <Route path="/order-place">
+            </PrivateRoute>
+            <PrivateRoute path="/order-place/:id">
               <OrderPlace />
-            </Route>
+            </PrivateRoute>
             <Route>
               <NotFound />
             </Route>

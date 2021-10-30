@@ -38,10 +38,10 @@ const Header = () =>
                             </Nav.Link>
                             {
                                 user.email ? <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.2">My Order</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Manage All Order</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/my-order">My Order</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/manage-all-order">Manage All Order</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">Add a New Service</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/add-new-service">Add a New Service</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <div className="text-center">
                                         <Button onClick={logOut} variant="btn btn-outline-dark" className="ms-auto">Logout</Button>

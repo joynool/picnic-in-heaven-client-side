@@ -4,7 +4,7 @@ const ManageAllOrder = () =>
 {
     return (
         <div>
-
+            <h2>Manage all order</h2>
         </div>
     );
 };
