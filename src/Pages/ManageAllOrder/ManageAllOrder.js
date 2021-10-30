@@ -86,7 +86,7 @@ const ManageAllOrder = () =>
                                 <Button onClick={() => handleUpdateStatus(order._id)} variant="outline-primary" size="sm">
                                     Approve
                                 </Button>
-                                <CloseButton onClick={() => handleDelete(order._id)} className="fs-5 bg-danger rounded-circle" />
+                                <CloseButton onClick={() => handleDelete(order._id)} className="fs-5 bg-danger rounded-circle ms-2" />
                             </td>
                         </tr>
                         )

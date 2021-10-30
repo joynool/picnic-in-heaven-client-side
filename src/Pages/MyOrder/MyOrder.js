@@ -1,8 +1,12 @@
 import React from 'react';
 import { Badge, CloseButton, Table } from 'react-bootstrap';
+import useAuth from '../../hooks/useAuth';
 
 const MyOrder = () =>
 {
+    const { user } = useAuth();
+    console.log(user.email)
+
     return (
         <div className="container my-5">
             <h3 className="fw-light fs-2 text-success text-center my-4"><u>My Order</u></h3>
