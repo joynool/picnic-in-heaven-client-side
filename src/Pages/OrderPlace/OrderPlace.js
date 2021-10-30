@@ -20,7 +20,7 @@ const OrderPlace = () =>
 
     const onSubmit = data =>
     {
-        data.orderInfo = { id: id, name: orderService.name, price: orderService.price, duration: orderService.duration };
+        data.orderInfo = { orderStatus: 'pending', id: id, name: orderService.name, price: orderService.price, duration: orderService.duration };
 
         fetch('https://shielded-river-19151.herokuapp.com/order', {
             method: 'POST',
@@ -76,7 +76,7 @@ const OrderPlace = () =>
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control {...register("phone")} placeholder="Enter Your Phone Number" required />
+                    <Form.Control {...register("phone")} placeholder="+88 01x xxxx xxxx" required />
                 </Form.Group>
                 <Form.Group className="m-3 d-flex justify-content-center">
                     <Button type="submit" variant="success" className="me-3">Order Confirm</Button>

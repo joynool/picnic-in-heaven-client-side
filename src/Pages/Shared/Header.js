@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from './../../images/logo.png';
-import { BsTelephone, BsEnvelope, BsCart3 } from 'react-icons/bs';
+import { BsTelephone, BsEnvelope } from 'react-icons/bs';
+import { BiSupport } from "react-icons/bi";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -16,7 +17,7 @@ const Header = () =>
                 <Container className="flex-column flex-lg-row">
                     <Navbar.Text className="text-white"><BsEnvelope /> info@pih.com</Navbar.Text>
                     <Navbar.Text className="text-white"><BsTelephone /> +88017xxxxxxxx</Navbar.Text>
-                    <Navbar.Text className="text-white"><BsCart3 /> 0 Items</Navbar.Text>
+                    <Navbar.Text className="text-white"><BiSupport /> 24x7 (Sunday Off)</Navbar.Text>
                 </Container>
             </Navbar>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">

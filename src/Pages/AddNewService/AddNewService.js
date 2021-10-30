@@ -55,7 +55,7 @@ const AddNewService = () =>
                     </Row>
                     <Form.Group className="mb-3">
                         <Form.Label>Service Image Link</Form.Label>
-                        <Form.Control {...register("img")} placeholder="Enter Service Image Link" />
+                        <Form.Control {...register("img")} placeholder="https://www.site.com/image_link" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Add New Service
