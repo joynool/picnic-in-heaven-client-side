@@ -15,7 +15,7 @@ const MyOrder = () =>
                         <th>Shipping Name</th>
                         <th>Shipping Phone</th>
                         <th>Status</th>
-                        <th>Cancel</th>
+                        <th className="text-center">Order Cancel</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,7 +30,7 @@ const MyOrder = () =>
                                 Pending
                             </Badge>
                         </td>
-                        <td><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
+                        <td className="text-center"><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -43,7 +43,7 @@ const MyOrder = () =>
                                 Pending
                             </Badge>
                         </td>
-                        <td><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
+                        <td className="text-center"><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -56,7 +56,7 @@ const MyOrder = () =>
                                 Pending
                             </Badge>
                         </td>
-                        <td><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
+                        <td className="text-center"><CloseButton className="fs-5 bg-danger rounded-circle" /></td>
                     </tr>
                 </tbody>
             </Table>

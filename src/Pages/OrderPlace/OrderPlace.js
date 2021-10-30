@@ -20,7 +20,8 @@ const OrderPlace = () =>
 
     const onSubmit = data =>
     {
-        data.orderInfo = { orderStatus: 'pending', id: id, name: orderService.name, price: orderService.price, duration: orderService.duration };
+        data.orderStatus = 'pending';
+        data.orderInfo = { id: id, name: orderService.name, price: orderService.price, duration: orderService.duration };
 
         fetch('https://shielded-river-19151.herokuapp.com/order', {
             method: 'POST',
