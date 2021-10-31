@@ -4,9 +4,9 @@ import { HashLink } from 'react-router-hash-link';
 import { FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-/*-----------------------------------------------------
-    Simple footer panel with navbar and social link
--------------------------------------------------------*/
+/*------------------------------------------------------------------
+            Simple footer panel with navbar and social link
+--------------------------------------------------------------------*/
 const Footer = () =>
 {
     return (

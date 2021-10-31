@@ -4,6 +4,9 @@ import one from './../../images/carousel/carousel_one.jpg';
 import two from './../../images/carousel/carousel_two.jpg';
 import three from './../../images/carousel/carousel_three.jpg';
 
+/*------------------------------------------------------------------
+            Bootstrap carousel for banner section
+--------------------------------------------------------------------*/
 const Banner = () =>
 {
     return (

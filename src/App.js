@@ -15,6 +15,9 @@ import OrderPlace from './Pages/OrderPlace/OrderPlace';
 import Footer from './Pages/Shared/Footer';
 import Header from './Pages/Shared/Header';
 
+/*------------------------------------------------------------------
+      Use context API to pass data and implement React router
+--------------------------------------------------------------------*/
 function App ()
 {
   return (

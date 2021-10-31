@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Badge, Button, CloseButton, Table } from 'react-bootstrap';
 
+/*------------------------------------------------------------------
+        Manage All Order data with approved and delete handler
+--------------------------------------------------------------------*/
 const ManageAllOrder = () =>
 {
     const [orders, setOrders] = useState([]);
 
+    //Load all order data from mongodb
     useEffect(() =>
     {
         fetch('https://shielded-river-19151.herokuapp.com/order')
@@ -13,6 +17,7 @@ const ManageAllOrder = () =>
             .catch(error => console.log(error));
     }, []);
 
+    //Pending/Approved update status handler
     const handleUpdateStatus = id =>
     {
         const statusUpdate = { orderStatus: 'approved' };
@@ -26,10 +31,11 @@ const ManageAllOrder = () =>
             {
                 if (data.modifiedCount > 0) {
                     alert('Your Order approved successfully');
-                }
+                };
             });
     };
 
+    //Order delete handler
     const handleDelete = id =>
     {
         const proceed = window.confirm('Are you sure, you want to DELETE?');
@@ -49,6 +55,7 @@ const ManageAllOrder = () =>
         }
     }
 
+    //All order data display panel using table
     return (
         <div className="container my-5">
             <h3 className="fw-light fs-2 text-success text-center my-4"><u>All Order Management Panel</u></h3>

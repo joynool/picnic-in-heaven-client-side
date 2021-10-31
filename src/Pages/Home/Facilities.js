@@ -2,7 +2,9 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaCar, FaCompass, FaHotel, FaIdCardAlt } from "react-icons/fa";
 
-
+/*------------------------------------------------------------------
+            Facilities section to show some feature
+--------------------------------------------------------------------*/
 const Facilities = () =>
 {
     return (

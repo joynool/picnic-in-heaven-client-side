@@ -5,6 +5,9 @@ import ttd_three from './../../images/thingsToDo/ttd_three.jpg';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
+/*------------------------------------------------------------------
+            Things To Do section to show some feature
+--------------------------------------------------------------------*/
 const ThingsToDo = () =>
 {
     return (

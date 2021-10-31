@@ -4,6 +4,10 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
+/*------------------------------------------------------------------
+            Order Place panel of your desire service with 
+            shipping info to pass order data to mongodb
+--------------------------------------------------------------------*/
 const OrderPlace = () =>
 {
     const { id } = useParams();
@@ -11,6 +15,7 @@ const OrderPlace = () =>
 
     const { register, handleSubmit, reset } = useForm();
 
+    //Load book now service from mongodb
     useEffect(() =>
     {
         fetch(`https://shielded-river-19151.herokuapp.com/service/${id}`)
@@ -18,6 +23,7 @@ const OrderPlace = () =>
             .then(data => setOrderService(data));
     }, [id]);
 
+    //Store shipping info to mongodb
     const onSubmit = data =>
     {
         data.orderStatus = 'pending';
@@ -40,6 +46,7 @@ const OrderPlace = () =>
             })
     };
 
+    //React hook form UI panel to pick data
     return (
         <div className="container shadow rounded my-5 p-5">
             <div className="d-lg-flex justify-content-center align-items-center text-center">

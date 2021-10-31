@@ -4,7 +4,7 @@ import { Redirect, Route } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
 /*-----------------------------------------------------
-        Private Route panel for login validation
+        Private Route panel for login route
 -------------------------------------------------------*/
 const PrivateRoute = ({ children, ...rest }) =>
 {

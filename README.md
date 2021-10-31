@@ -1,11 +1,11 @@
 # Project Name: Picnic In Heaven
 
-This site represents Fitness Club gym information with functionality. Its 3 pages website. Home page shows top banner and all services. Other two page represent offer and about us information. Its basically login/register based website so that you can get all service after successful register.
+This site represents picnic related services in all over Bangladesh. The main goal of this site is you can explore picnic booking services and book your desire service. Also you can add new service if you find amazing picnic spot in our country.
 
-Check out my live site - [Picnic In Heaven](https://fitness-club-5b37c.web.app/).
+Check out my live site - [Picnic In Heaven](https://picnic-in-heaven.web.app/).
 
-- This site represents gym information.
-- You can checkout all services at home page.
-- If you want details about services you must be registered.
-- You can also find 1 day offer.
-- You can find header and footer with all pages.
+- Explore picnic booking services.
+- Add new picnic booking services after google login.
+- After login you can book any services to provide your shipping info.
+- After login You can check and cancel your order through My Order.
+- After login You can check, cancel and approved your order through Manage All Order.

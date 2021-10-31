@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Row, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+/*------------------------------------------------------------------
+            All Services display section from mongodb
+--------------------------------------------------------------------*/
 const Service = () =>
 {
     const [services, setServices] = useState([]);
+
+    //Load all service data from mongodb
     useEffect(() =>
     {
         fetch('https://shielded-river-19151.herokuapp.com/service')

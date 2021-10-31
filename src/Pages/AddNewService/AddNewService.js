@@ -2,9 +2,14 @@ import React from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 
+/*------------------------------------------------------------------
+            Add new service panel for service section
+--------------------------------------------------------------------*/
 const AddNewService = () =>
 {
     const { register, handleSubmit, reset } = useForm();
+
+    //Create new service to mongodb
     const onSubmit = data =>
     {
         fetch('https://shielded-river-19151.herokuapp.com/service', {
@@ -21,8 +26,6 @@ const AddNewService = () =>
                 }
             });
     };
-
-
 
     return (
         <div className="container shadow rounded my-5 p-5">

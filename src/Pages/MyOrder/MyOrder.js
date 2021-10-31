@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Badge, CloseButton, Table } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 
+/*------------------------------------------------------------------
+            My Order panel for filter data using user email
+--------------------------------------------------------------------*/
 const MyOrder = () =>
 {
     const { user } = useAuth();
-    //console.log(user.email)
+
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() =>
@@ -16,6 +19,7 @@ const MyOrder = () =>
             .catch(error => console.log(error));
     }, [user.email]);
 
+    //Delete order data handler
     const handleMyOrderDelete = id =>
     {
         const proceed = window.confirm('Are you sure, you want to DELETE?');
@@ -30,11 +34,12 @@ const MyOrder = () =>
                         alert('Successfully Deleted the Order');
                         const restOrders = myOrders.filter(order => order._id !== id);
                         setMyOrders(restOrders);
-                    }
-                })
-        }
-    }
+                    };
+                });
+        };
+    };
 
+    //All order data display panel using table
     return (
         <div className="container my-5">
             <h3 className="fw-light fs-2 text-success text-center my-4"><u>My Order</u></h3>
