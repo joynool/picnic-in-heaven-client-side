@@ -25,7 +25,7 @@ const ManageAllOrder = () =>
             .then(data =>
             {
                 if (data.modifiedCount > 0) {
-                    alert('Status Updated');
+                    alert('Your Order approved successfully');
                 }
             });
     };
