@@ -46,7 +46,7 @@ const MyOrder = () =>
                         <th>Service Price</th>
                         <th>Shipping Name</th>
                         <th>Shipping Phone</th>
-                        <th>Status</th>
+                        <th>Order Status</th>
                         <th className="text-center">Order Cancel</th>
                     </tr>
                 </thead>
@@ -69,7 +69,7 @@ const MyOrder = () =>
 
                             </td>
                             <td className="d-flex justify-content-around align-items-center">
-                                <CloseButton onClick={() => handleMyOrderDelete(order._id)} className="fs-5 bg-danger rounded-circle ms-2" />
+                                <CloseButton onClick={() => handleMyOrderDelete(order._id)} className="fs-5 bg-danger rounded-circle ms-2" title="Delete Order" />
                             </td>
                         </tr>
                         )

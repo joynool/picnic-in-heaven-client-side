@@ -31,16 +31,16 @@ const AddNewService = () =>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <Form.Group className="mb-3">
                         <Form.Label>Service Name</Form.Label>
-                        <Form.Control {...register("name")} placeholder="Enter Service Name" />
+                        <Form.Control {...register("name")} placeholder="Enter Service Name" required />
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label>Service Description</Form.Label>
-                        <Form.Control {...register("description")} placeholder="Enter Service Description" />
+                        <Form.Control {...register("description")} placeholder="Enter Service Description" required />
                     </Form.Group>
                     <Row className="mb-3">
                         <Form.Group as={Col}>
                             <Form.Label>Service Duration</Form.Label>
-                            <Form.Select {...register("duration")} defaultValue="Choose...">
+                            <Form.Select {...register("duration")} defaultValue="2 Days 2 Night" required>
                                 <option>Choose...</option>
                                 <option>2 Days 2 Night</option>
                                 <option>3 Days 3 Night</option>
@@ -50,12 +50,12 @@ const AddNewService = () =>
 
                         <Form.Group as={Col}>
                             <Form.Label>Service Price</Form.Label>
-                            <Form.Control {...register("price")} placeholder="Enter Service Price" type="number" />
+                            <Form.Control {...register("price")} placeholder="Enter Service Price" type="number" required />
                         </Form.Group>
                     </Row>
                     <Form.Group className="mb-3">
                         <Form.Label>Service Image Link</Form.Label>
-                        <Form.Control {...register("img")} placeholder="https://www.site.com/image_link" />
+                        <Form.Control {...register("img")} placeholder="https://www.site.com/image_link" required />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Add New Service

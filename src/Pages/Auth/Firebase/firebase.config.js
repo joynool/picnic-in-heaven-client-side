@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBt_udmEFspbPzNpPTB3R8O-T93BfI5k8M",
-    authDomain: "picnic-in-heaven.firebaseapp.com",
-    projectId: "picnic-in-heaven",
-    storageBucket: "picnic-in-heaven.appspot.com",
-    messagingSenderId: "60417277657",
-    appId: "1:60417277657:web:a52a0e2efaa87fdd6e48c8"
+    apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
+    authDomain: `${process.env.REACT_APP_FIREBASE_AUTH_DOMAIN}`,
+    projectId: `${process.env.REACT_APP_FIREBASE_PROJECT_ID}`,
+    storageBucket: `${process.env.REACT_APP_FIREBASE_STORAGE_BUCKET}`,
+    messagingSenderId: `${process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID}`,
+    appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`
 };
 
 export default firebaseConfig;

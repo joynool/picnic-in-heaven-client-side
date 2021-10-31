@@ -60,7 +60,7 @@ const ManageAllOrder = () =>
                         <th>Service Price</th>
                         <th>Shipping Name</th>
                         <th>Shipping Phone</th>
-                        <th>Status</th>
+                        <th>Order Status</th>
                         <th className="text-center">Management</th>
                     </tr>
                 </thead>
@@ -84,9 +84,9 @@ const ManageAllOrder = () =>
                             </td>
                             <td className="d-flex justify-content-around align-items-center">
                                 <Button onClick={() => handleUpdateStatus(order._id)} variant="outline-primary" size="sm">
-                                    Approve
+                                    Order Approve
                                 </Button>
-                                <CloseButton onClick={() => handleDelete(order._id)} className="fs-5 bg-danger rounded-circle ms-2" />
+                                <CloseButton onClick={() => handleDelete(order._id)} className="fs-5 bg-danger rounded-circle ms-2" title="Delete Order" />
                             </td>
                         </tr>
                         )
