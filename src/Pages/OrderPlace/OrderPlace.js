@@ -3,6 +3,7 @@ import { Button, Col, Form, Image, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+import useAuth from '../../hooks/useAuth';
 
 /*------------------------------------------------------------------
             Order Place panel of your desire service with 
@@ -12,6 +13,7 @@ const OrderPlace = () =>
 {
     const { id } = useParams();
     const [orderService, setOrderService] = useState({});
+    const { user } = useAuth();
 
     const { register, handleSubmit, reset } = useForm();
 
@@ -70,12 +72,12 @@ const OrderPlace = () =>
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                         <Form.Label>Name</Form.Label>
-                        <Form.Control {...register("name")} placeholder="Enter Your Name" required />
+                        <Form.Control {...register("name")} defaultValue={user.displayName} required />
                     </Form.Group>
 
                     <Form.Group as={Col}>
                         <Form.Label>Email</Form.Label>
-                        <Form.Control {...register("email")} placeholder="Enter Your Email" type="email" required />
+                        <Form.Control {...register("email")} type="email" defaultValue={user.email} required />
                     </Form.Group>
                 </Row>
                 <Form.Group className="mb-3">
